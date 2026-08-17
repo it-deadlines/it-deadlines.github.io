@@ -895,9 +895,10 @@
   year: 2026
   description: IEEE International Conference on Trust, Privacy and Security in Intelligent Systems, and Applications
   link: https://tps.ieee-cs.org/2026/call-for-papers/
+  dblp: https://dblp.org/db/conf/tpsisa/index.html
   deadline:
     - "2026-06-15 23:59"
-    - "2026-08-15 23:59"
+    - "2026-08-22 23:59"
   date: "November 4-6"
   place: San Jose, CA, USA
   tags: [SEC, PRIV, CONF, OTHERS]
@@ -908,7 +909,7 @@
   link: https://risc.ieee-cs.org/2026/call-for-papers/
   deadline:
     - "2026-06-15 23:59"
-    - "2026-08-15 23:59"
+    - "2026-08-22 23:59"
   date: "November 4-6"
   place: San Jose, CA, USA
   tags: [SEC, CONF, OTHERS]
