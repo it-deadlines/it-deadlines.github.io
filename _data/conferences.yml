@@ -877,7 +877,7 @@
   year: 2026
   description: Nordic Conference on Secure IT Systems
   link: http://nordsec2026.dk/
-  deadline: ["2026-08-17 23:59"]
+  deadline: ["2026-08-27 23:59"]
   date: "November 11-12"
   place: Aarhus, Denmark
   tags: [SEC, PRIV, CONF, CORE-C]
