@@ -2,8 +2,9 @@
 title: Information Theory Conference/Journals Deadlines
 description: >-
   Countdowns to information theory conference and journal special-issue
-  deadlines (ISIT, ITW, Allerton, CISS, DCC, ISITA, JSAIT, ...).
-  All deadlines shown in your local time.
+  deadlines (ISIT, ITW, Allerton, CISS, DCC, ISITA, JSAIT, ...). Also several communication and ML 
+  conferences where information theory are relevant.
+  All deadlines shown in your local time. 
 
 # These feed the "send a pull request" link in index.html via Liquid:
 github_username: it-deadlines        # <- your org/user

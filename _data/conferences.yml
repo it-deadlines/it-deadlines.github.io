@@ -2,16 +2,31 @@
 # Format follows sec-deadlines / ai-deadlines conventions:
 #   deadline is a LIST (even for one deadline); timezone uses tz names with
 #   inverted sign for Etc/GMT zones (AoE = UTC-12 = "Etc/GMT+12", default).
-# Tags: IT (core info theory), COMM (communications), CODING (coding theory),
-#        ML (learning/statistics), JOURNAL (journal special issues)
 #
-# All dates below verified against official sources on 2026-08-26.
-# Where the CFP gives a date but no time, 23:59 AoE is assumed (the usual convention).
+# type: one of  conference | workshop | journal   (drives the type tabs)
+# tags: IT (core info theory), COMM (communications), CODING (coding theory),
+#        ML (learning/statistics)
+#
+# All dated entries verified against official sources on 2026-08-26.
+# Where a CFP gives a date but no time, 23:59 AoE is assumed (the usual convention).
 
-# ---------------- Upcoming deadlines ----------------
+# ======================= Upcoming deadlines =======================
+
+- name: ICLR
+  year: 2027
+  type: conference
+  description: International Conference on Learning Representations
+  link: https://iclr.cc/Conferences/2027
+  deadline: ["2026-09-18 23:59", "2026-09-25 23:59"]
+  timezone: Etc/GMT+12
+  date: April 26-30, 2027
+  place: TBA (see iclr.cc)
+  tags: [ML, IT]
+  note: First deadline is the mandatory abstract; second is the full paper. New reciprocal-reviewing requirement this year. Venue listings conflict across trackers; confirm on iclr.cc.
 
 - name: ITW
   year: 2027
+  type: conference
   description: IEEE Information Theory Workshop
   link: https://2027.ieee-itw.org/
   deadline: ["2026-10-02 23:59"]
@@ -23,6 +38,7 @@
 
 - name: DCC
   year: 2027
+  type: conference
   description: IEEE Data Compression Conference
   link: https://datacompressionconference.org/
   deadline: ["2026-10-02 23:59"]
@@ -32,8 +48,21 @@
   tags: [IT, CODING]
   note: Deadline is 11:59pm US Pacific Time (per the official CFP).
 
+- name: ICC
+  year: 2027
+  type: conference
+  description: IEEE International Conference on Communications
+  link: https://icc2027.ieee-icc.org/
+  deadline: ["2026-10-02 23:59"]
+  timezone: Etc/GMT+12
+  date: May 30 - June 3, 2027
+  place: Washington, DC, USA
+  tags: [COMM, IT]
+  note: Submissions open now via EDAS per symposium track. Workshop-paper deadlines follow later; see the workshops page.
+
 - name: ISIT
   year: 2027
+  type: conference
   description: IEEE International Symposium on Information Theory
   link: https://2027.ieee-isit.org/
   deadline: ["2027-01-10 23:59"]
@@ -43,8 +72,21 @@
   tags: [IT, CODING, COMM, ML]
   note: Workshop proposals due Nov 30, 2026; tutorial proposals due Feb 26, 2027. Notification Mar 27, 2027.
 
+- name: ICML
+  year: 2027
+  type: conference
+  description: International Conference on Machine Learning
+  link: https://icml.cc/
+  deadline: ["TBA"]
+  timezone: Etc/GMT+12
+  date: July 2027 (expected)
+  place: TBA
+  tags: [ML, IT]
+  note: Official CFP not yet posted. Community trackers expect abstracts ~mid-Jan and papers ~late Jan 2027; confirm on icml.cc when announced.
+
 - name: CISS
   year: 2027
+  type: conference
   description: 60th Annual Conference on Information Sciences and Systems
   link: https://ciss.jhu.edu/
   deadline: ["TBA"]
@@ -56,6 +98,7 @@
 
 - name: ITA
   year: 2027
+  type: workshop
   description: Information Theory and Applications Workshop
   link: https://ita.ucsd.edu/
   deadline: ["TBA"]
@@ -65,8 +108,21 @@
   tags: [IT, ML]
   note: Invitation-based; no proceedings. Listed for planning rather than a hard deadline.
 
+- name: NeurIPS Workshops
+  year: 2026
+  type: workshop
+  description: Workshops at the Conference on Neural Information Processing Systems
+  link: https://neurips.cc/Conferences/2026
+  deadline: ["TBA"]
+  timezone: Etc/GMT+12
+  date: December 2026 (workshop days)
+  place: Sydney, Australia (+ Atlanta & Paris satellites)
+  tags: [ML, IT]
+  note: Each workshop sets its own paper deadline, typically late Aug - Sep 2026. Info-theoretic ML workshops recur most years; check the accepted-workshops list for individual CFPs.
+
 - name: Allerton
   year: 2027
+  type: conference
   description: Allerton Conference on Communication, Control, and Computing
   link: https://allerton.csl.illinois.edu/
   deadline: ["TBA"]
@@ -76,10 +132,35 @@
   tags: [IT, COMM, ML]
   note: CFP typically opens May 1 with a mid-June deadline (2026 cycle was June 15).
 
-# ---------------- Recently passed (kept for reference; update next cycle) ----------------
+- name: GLOBECOM
+  year: 2027
+  type: conference
+  description: IEEE Global Communications Conference
+  link: https://globecom2027.ieee-globecom.org/
+  deadline: ["TBA"]
+  timezone: Etc/GMT+12
+  date: December 2027 (expected)
+  place: TBA
+  tags: [COMM, IT]
+  note: CFP not yet out; paper deadlines historically fall in early April. Verify the 2027 site when it goes live.
+
+# ============ Recently passed (kept for reference; update next cycle) ============
+
+- name: NeurIPS
+  year: 2026
+  type: conference
+  description: Conference on Neural Information Processing Systems (40th)
+  link: https://neurips.cc/Conferences/2026
+  deadline: ["2026-05-04 23:59", "2026-05-06 23:59"]
+  timezone: Etc/GMT+12
+  date: December 6-12, 2026
+  place: Sydney, Australia (+ Atlanta & Paris satellites)
+  tags: [ML, IT]
+  note: Main-track deadlines passed (abstract May 4, paper May 6). Notification Sep 24, 2026. See the NeurIPS Workshops entry for still-open workshop CFPs.
 
 - name: Allerton
   year: 2026
+  type: conference
   description: Allerton Conference on Communication, Control, and Computing
   link: https://allerton.csl.illinois.edu/
   deadline: ["2026-06-15 23:59"]
@@ -91,6 +172,7 @@
 
 - name: ISITA
   year: 2026
+  type: conference
   description: International Symposium on Information Theory and Its Applications
   link: https://isita.ieice.org/2026/
   deadline: ["2026-05-11 23:59"]
@@ -102,6 +184,7 @@
 
 - name: ITW
   year: 2026
+  type: workshop
   description: IEEE Information Theory Workshop
   link: https://2026.ieee-itw.org/
   deadline: ["2026-05-10 23:59"]
@@ -111,19 +194,19 @@
   tags: [IT, CODING, ML]
   note: Deadline passed (extended from May 3). First ITW with a student paper award.
 
-# ---------------- Journal special issues ----------------
+# ======================= Journal special issues =======================
 # Regular journals (IEEE Trans. Inf. Theory, etc.) accept rolling submissions and
-# have no countdown. Only dated special-issue CFPs are listed, tagged JOURNAL.
-# Add new JSAIT special issues here as they are announced at
-# https://www.itsoc.org/jsait/calls-for-papers
+# have no countdown. Only dated special-issue CFPs are listed here.
+# New JSAIT calls appear at https://www.itsoc.org/jsait/calls-for-papers
 
 - name: JSAIT SI Data Compression
   year: 2026
+  type: journal
   description: "IEEE JSAIT Special Issue: Data Compression - Classical Theories Meet Modern Advances"
   link: https://www.itsoc.org/jsait/calls-for-papers
   deadline: ["2026-03-31 23:59"]
   timezone: Etc/GMT+12
   date: Continuous publication after acceptance
   place: Online (IEEE Xplore)
-  tags: [IT, JOURNAL]
+  tags: [IT]
   note: Submission window closed Mar 31, 2026. Kept as a template entry; replace with the next announced JSAIT special issue.
