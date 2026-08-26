@@ -1,14 +1,18 @@
-title: Security and Privacy Conference Deadlines
-description: Countdowns to top Security and Privacy conference deadlines.
-author: Bogdan Kulynych
 
-domain: "sec-deadlines.github.io"
+title: Information Theory Conference/Journals Deadlines
+description: >-
+  Countdowns to information theory conference and journal special-issue
+  deadlines (ISIT, ITW, Allerton, CISS, DCC, ISITA, JSAIT, ...).
+  All deadlines shown in your local time.
+
+# These feed the "send a pull request" link in index.html via Liquid:
+github_username: it-deadlines        # <- your org/user
+github_repo: it-deadlines.github.io  # <- your repo name
+
+# Optional; remove the twitter line in index.html if you don't want one
+twitter_username: ""
+
+url: "https://it-deadlines.github.io"
 baseurl: ""
 
-twitter_username: hiddenmarkov
-github_username: sec-deadlines
-github_repo: sec-deadlines
-ga_id: UA-104921371-1
-
-markdown: kramdown
 
