@@ -1,22 +1,12 @@
 ---
-- name: Security
-  tag: SEC
-- name: Privacy
-  tag: PRIV
-- name: Crypto
-  tag: CRYPTO
-- name: Security Top-4
-  tag: TOP4
-- name: A*
-  tag: ASTAR
-- name: A
-  tag: CORE-A
-- name: B
-  tag: CORE-B
-- name: C
-  tag: CORE-C
-- name: National/Unranked
-  tag: OTHERS
+- name: Information Theory
+  tag: IT
+- name: Communications
+  tag: COMM
+- name: Coding Theory
+  tag: CODING
+- name: Machine Learning
+  tag: ML
 - name: Conference
   tag: CONF
 - name: Workshop

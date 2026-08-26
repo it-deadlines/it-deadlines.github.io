@@ -2,7 +2,7 @@
 title: Information Theory Conference/Journals Deadlines
 description: >-
   Countdowns to information theory conference and journal special-issue
-  deadlines (ISIT, ITW, Allerton, CISS, DCC, ISITA, JSAIT, ...). Also several communication and ML 
+  deadlines (ISIT, ITW, Allerton, CISS, DCC, ISITA, JSAIT, ...). Also several major communication and ML 
   conferences where information theory are relevant.
   All deadlines shown in your local time. 
 
@@ -13,6 +13,7 @@ github_repo: it-deadlines.github.io  # <- your repo name
 # Optional; remove the twitter line in index.html if you don't want one
 twitter_username: ""
 
+domain: it-deadlines.github.io
 url: "https://it-deadlines.github.io"
 baseurl: ""
 

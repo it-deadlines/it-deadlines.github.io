@@ -17,7 +17,7 @@
   type: conference
   description: International Conference on Learning Representations
   link: https://iclr.cc/Conferences/2027
-  deadline: ["2026-09-18 23:59", "2026-09-25 23:59"]
+  deadline: ["2026-09-25 23:59"]
   timezone: Etc/GMT+12
   date: April 26-30, 2027
   place: TBA (see iclr.cc)
@@ -184,7 +184,7 @@
 
 - name: ITW
   year: 2026
-  type: workshop
+  type: conference
   description: IEEE Information Theory Workshop
   link: https://2026.ieee-itw.org/
   deadline: ["2026-05-10 23:59"]

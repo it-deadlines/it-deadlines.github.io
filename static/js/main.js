@@ -6,8 +6,7 @@ $(function() {
   {% for conf in site.data.conferences %}
   // {{ conf.name }} {{ conf.year }}
   {% if conf.deadline[0] == "TBA" %}
-  {% assign conf_type = conf.tags | join: "-" | slugify %}
-  {% assign conf_id = conf.name | append: conf.year | append: '-0' | append: conf_type | slugify %}
+  {% assign conf_id = conf.name | append: conf.year | append: '-0' | slugify %}
   $('#{{ conf_id }} .timer').html("TBA");
   $('#{{ conf_id }} .deadline-time').html("TBA");
   deadlineByConf["{{ conf_id }}"] = null;
@@ -101,12 +100,28 @@ $(function() {
 
   $('.conf-container').append(confs);
 
+  // Filter groups are built ONLY from the keys that actually exist in
+  // _data/filters.yml. Referencing a missing filter (the old hardcoded
+  // filter3/"rank") rendered as null and crashed the whole script.
   var domGroupKey = { filter1: 'domain', filter2: 'type', filter3: 'rank' };
-  var filterGroups = {
-    domain: {{ site.data.filters.filter1 | jsonify }},
-    type: {{ site.data.filters.filter2 | jsonify }},
-    rank: {{ site.data.filters.filter3 | jsonify }}
-  };
+  var filterGroups = {};
+  {% if site.data.filters.filter1 %}
+  filterGroups.domain = {{ site.data.filters.filter1 | jsonify }};
+  {% endif %}
+  {% if site.data.filters.filter2 %}
+  filterGroups.type = {{ site.data.filters.filter2 | jsonify }};
+  {% endif %}
+  {% if site.data.filters.filter3 %}
+  filterGroups.rank = {{ site.data.filters.filter3 | jsonify }};
+  {% endif %}
+
+  function emptySelection() {
+    var selected = {};
+    Object.keys(filterGroups).forEach(function(group) {
+      selected[group] = [];
+    });
+    return selected;
+  }
 
   var all_tags = Object.keys(filterGroups)
     .reduce(function(acc, key) { return acc.concat(filterGroups[key]); }, [])
@@ -148,7 +163,7 @@ $(function() {
 
   function readSelectionFromUrl() {
     var found = false;
-    var selected = { domain: [], type: [], rank: [] };
+    var selected = emptySelection();
     Object.keys(filterGroups).forEach(function(group) {
       var names = getQueryParamParts(group);
       if (names === null) return;
@@ -173,7 +188,7 @@ $(function() {
       });
     });
   } else {
-    initialTags = store.get('{{ site.domain }}');
+    initialTags = store.get('{{ site.domain | default: site.github_repo }}');
     if (!Array.isArray(initialTags)) {
       initialTags = [];
     }
@@ -185,7 +200,7 @@ $(function() {
   }
 
   function getSelectedFiltersFromDOM() {
-    var selected = { domain: [], type: [], rank: [] };
+    var selected = emptySelection();
 
     $('.filter-checkbox:checked').each(function() {
       var tag = $(this).attr('id').replace('-checkbox', '');
@@ -204,7 +219,7 @@ $(function() {
     $('.filter-checkbox:checked').each(function() {
       selectedTags.push($(this).attr('id').replace('-checkbox', ''));
     });
-    store.set('{{ site.domain }}', selectedTags);
+    store.set('{{ site.domain | default: site.github_repo }}', selectedTags);
   }
 
   function updateUrlFromSelection() {
