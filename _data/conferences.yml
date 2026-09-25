@@ -7,7 +7,7 @@
 # tags: IT (core info theory), COMM (communications), CODING (coding theory),
 #        ML (learning/statistics)
 #
-# All dated entries verified against official sources on 2026-08-26.
+# All dated entries verified against official sources on 2026-09-25.
 # Where a CFP gives a date but no time, 23:59 AoE is assumed (the usual convention).
 
 # ======================= Upcoming deadlines =======================
@@ -17,24 +17,24 @@
   type: conference
   description: International Conference on Learning Representations
   link: https://iclr.cc/Conferences/2027
-  deadline: ["2026-09-25 23:59"]
+  deadline: ["2026-09-18 23:59", "2026-09-25 23:59"]
   timezone: Etc/GMT+12
   date: April 26-30, 2027
   place: TBA (see iclr.cc)
   tags: [ML, IT]
-  note: First deadline is the mandatory abstract; second is the full paper. New reciprocal-reviewing requirement this year. Venue listings conflict across trackers; confirm on iclr.cc.
+  note: First deadline is the mandatory abstract; second is the full paper. Main conference Apr 26-28, workshops Apr 29-30. New reciprocal-reviewing requirement this year. Location not yet announced on iclr.cc.
 
 - name: ITW
   year: 2027
   type: conference
   description: IEEE Information Theory Workshop
   link: https://2027.ieee-itw.org/
-  deadline: ["2026-10-02 23:59"]
+  deadline: ["2026-10-11 23:59"]
   timezone: Etc/GMT+12
   date: April 5-8, 2027
   place: Munich, Germany
   tags: [IT, CODING, ML]
-  note: Themed session proposals were due July 19, 2026. Acceptance Dec 15, 2026; camera-ready Jan 15, 2027.
+  note: Deadline extended from Oct 2 to Oct 11, 2026. Themed session proposals were due July 19, 2026. Acceptance Dec 15, 2026; camera-ready Jan 15, 2027.
 
 - name: DCC
   year: 2027
@@ -43,10 +43,10 @@
   link: https://datacompressionconference.org/
   deadline: ["2026-10-02 23:59"]
   timezone: America/Los_Angeles
-  date: March 23-28, 2027
+  date: March 23-26, 2027
   place: Snowbird, UT, USA
   tags: [IT, CODING]
-  note: Deadline is 11:59pm US Pacific Time (per the official CFP).
+  note: Deadline is 11:59pm US Pacific Time (per the official CFP). Notification Nov 22, 2026; final papers due Dec 9, 2026.
 
 - name: ICC
   year: 2027
@@ -58,7 +58,19 @@
   date: May 30 - June 3, 2027
   place: Washington, DC, USA
   tags: [COMM, IT]
-  note: Submissions open now via EDAS per symposium track. Workshop-paper deadlines follow later; see the workshops page.
+  note: Submissions open now via EDAS per symposium track. Notification Jan 15, 2027; camera-ready Feb 19, 2027. Workshop-paper deadlines follow later; see the workshops page.
+
+- name: AISTATS
+  year: 2027
+  type: conference
+  description: International Conference on Artificial Intelligence and Statistics
+  link: https://virtual.aistats.org/Conferences/2027/CallForPapers
+  deadline: ["2026-09-29 23:59", "2026-10-06 23:59"]
+  timezone: Etc/GMT+12
+  date: May 3-6, 2027
+  place: Montreal, Canada
+  tags: [ML, IT]
+  note: First deadline is the abstract; second is the full paper (all supplementary material due with the paper).
 
 - name: ISIT
   year: 2027
@@ -70,7 +82,7 @@
   date: June 27 - July 2, 2027
   place: Sorrento, Italy
   tags: [IT, CODING, COMM, ML]
-  note: Workshop proposals due Nov 30, 2026; tutorial proposals due Feb 26, 2027. Notification Mar 27, 2027.
+  note: Workshop proposals due Nov 30, 2026; tutorial proposals due Feb 26, 2027. Notification Mar 27, 2027; final manuscripts due Apr 17, 2027.
 
 - name: ICML
   year: 2027
@@ -80,9 +92,9 @@
   deadline: ["TBA"]
   timezone: Etc/GMT+12
   date: July 2027 (expected)
-  place: TBA
+  place: South America (city TBA)
   tags: [ML, IT]
-  note: Official CFP not yet posted. Community trackers expect abstracts ~mid-Jan and papers ~late Jan 2027; confirm on icml.cc when announced.
+  note: Official CFP not yet posted; icml.cc lists 2027 as South America. Community trackers expect abstracts ~mid-Jan and papers ~late Jan 2027; confirm on icml.cc when announced.
 
 - name: CISS
   year: 2027
